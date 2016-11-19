@@ -11,7 +11,10 @@ const getLevelData = (state = {}, action) => {
       return action
 
     case 'LOAD_LEVEL_POINTS':
-      return action.data  
+      return action.data
+
+    case 'LOAD_TITLE_POINTS':
+      return action.data
 
     default:
       return state

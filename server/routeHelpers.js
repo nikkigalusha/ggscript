@@ -65,7 +65,7 @@ module.exports = {
 
 
     })
-    
+
 
 
   },
@@ -119,6 +119,16 @@ module.exports = {
   },
 
   sendLevelPointsData: function(req, res){
-    db.query(``)
+    db.query(`SELECT * FROM pointevents`)
+      .on('end', (result) => {
+        res.send(result.rows);
+      });
+  },
+
+  sendTitlePointsData: function(req, res){
+    db.query(`SELECT * FROM titlepoints`)
+      .on('end', (result) => {
+        res.send(result.rows);
+      });
   }
 }

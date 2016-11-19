@@ -7,7 +7,7 @@ module.exports.router = function(app, passport) {
 
   app.get('/api/leveldata', helpers.sendLevelData);
 
-  app.post('/api/updatelevel', helpers.isLoggedIn, helpers.updateLevel); 
+  app.post('/api/updatelevel', helpers.isLoggedIn, helpers.updateLevel);
 
   app.get('/api/logout', helpers.logout);
 
@@ -24,11 +24,14 @@ module.exports.router = function(app, passport) {
 
   });
 
-  app.get('/auth/google/callback', 
+  app.get('/auth/google/callback',
   	passport.authenticate('google', {failureRedirect : '/#/login', successRedirect: '/#/profile'}), (req,res) => {
   	});
 
   app.get('/api/templatedata', helpers.sendTemplateData);
 
+  app.get('/api/levelpoints', helpers.sendLevelPointsData);
+
+  app.get('/api/titlepoints', helpers.sendTitlePointsData);
 
 };

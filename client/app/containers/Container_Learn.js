@@ -70,6 +70,7 @@ class Learn extends React.Component {
     this.handleError();
     this.props.getLevelData();
     this.props.getLevelPoints();
+    this.props.getTitlePoints();
   }
   updateCode(newCode) {
     console.log(this, 'this')
@@ -298,7 +299,7 @@ function mapStateToProps(state){
 function mapDispatchToProps(dispatch){
   return {
     getLevelData: () => {
-      dispatch(getLevelData())
+      dispatch(getLevelData());
     },
     dispatch: dispatch,
     updateLevel: (advanceBoolean, currlevel) => {
@@ -306,6 +307,9 @@ function mapDispatchToProps(dispatch){
     },
     getLevelPoints: () => {
       dispatch(getLevelPoints());
+    },
+    getTitlePoints: () => {
+      dispatch(getTitlePoints());
     }
   }
 }
