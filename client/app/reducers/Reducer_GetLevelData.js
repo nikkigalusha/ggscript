@@ -13,7 +13,7 @@ const getLevelData = (state = {}, action) => {
     case 'LOAD_LEVEL_POINTS':
       return action.data
 
-    case 'LOAD_TITLE_POINTS':
+    case 'LOAD_DIFF_LEVEL_POINTS':
       return action.data
 
     default:

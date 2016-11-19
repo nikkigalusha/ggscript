@@ -32,6 +32,6 @@ module.exports.router = function(app, passport) {
 
   app.get('/api/levelpoints', helpers.sendLevelPointsData);
 
-  app.get('/api/titlepoints', helpers.sendTitlePointsData);
+  app.get('/api/difflevelpoints', helpers.sendDiffLevelPointsData);
 
 };

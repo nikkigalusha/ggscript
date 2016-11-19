@@ -1,15 +1,15 @@
-function loadTitlePointsUponResponse(data){
-  return {type: 'LOAD_TITLE_POINTS', data}
+function loadDiffLevelPointsUponResponse(data){
+  return {type: 'LOAD_DIFF_LEVEL_POINTS', data}
 };
 
-function getTitlePoints() {
+function getDiffLevelPoints() {
   return function(dispatch){
     fetch(`api/titlepoints`, {
       method: 'GET',
     })
     .then(response => {
       response.json().then(res => {
-        dispatch(loadTitlePointsUponResponse(res))
+        dispatch(loadDiffLevelPointsUponResponse(res))
       })
       .catch(err => {console.log(err)})
     }).catch(err => {
@@ -19,4 +19,4 @@ function getTitlePoints() {
   };
 }
 
-export { getTitlePoints }
+export { getDiffLevelPoints }

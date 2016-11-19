@@ -125,8 +125,8 @@ module.exports = {
       });
   },
 
-  sendTitlePointsData: function(req, res){
-    db.query(`SELECT * FROM titlepoints`)
+  sendDiffLevelPointsData: function(req, res){
+    db.query(`SELECT * FROM difflevelpoints`)
       .on('end', (result) => {
         res.send(result.rows);
       });

@@ -70,7 +70,7 @@ class Learn extends React.Component {
     this.handleError();
     this.props.getLevelData();
     this.props.getLevelPoints();
-    this.props.getTitlePoints();
+    this.props.getDiffLevelPoints();
   }
   updateCode(newCode) {
     console.log(this, 'this')
@@ -292,7 +292,8 @@ function mapStateToProps(state){
     heroiclevelcode: state.getLevelData.heroiclevelcode,
     mythiclevelcode: state.getLevelData.mythiclevelcode,
     novicelevelcode: state.getLevelData.novicelevelcode,
-    difficultyLevel: state.getLevelData.difficultyLevel
+    difficultyLevel: state.getLevelData.difficultyLevel,
+    difflevelpoints: state.getLevelData.difflevelpoints
   }
 }
 
@@ -308,8 +309,8 @@ function mapDispatchToProps(dispatch){
     getLevelPoints: () => {
       dispatch(getLevelPoints());
     },
-    getTitlePoints: () => {
-      dispatch(getTitlePoints());
+    getDiffLevelPoints: () => {
+      dispatch(getDiffLevelPoints());
     }
   }
 }
