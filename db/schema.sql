@@ -47,3 +47,11 @@ CREATE TABLE IF NOT EXISTS "title_points" (
  "title" VARCHAR(255) NOT NULL,
  CONSTRAINT title_points_pk PRIMARY KEY ("id")
 )`
+
+`CREATE TABLE IF NOT EXISTS "usercompletedlevels" (
+  "id" serial NOT NULL,
+  "levelNum" INTEGER NOT NULL,
+  "difficulty" text[],
+  "userid" REFERENCES "users",
+  CONSTRAINT users_pk PRIMARY KEY ("id")
+)`

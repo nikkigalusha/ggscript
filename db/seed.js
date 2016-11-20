@@ -122,7 +122,22 @@ connection.query(
     } else {
       console.log('Data added to difflevelpts');
     }
-  });
+});
+
+connection.query(
+  `CREATE TABLE IF NOT EXISTS "usercompletedlevels" (
+  "id" SERIAL PRIMARY KEY,
+  "levelnum" INTEGER NOT NULL,
+  "difficulty" TEXT ARRAY,
+  "userid" INTEGER NOT NULL,
+  FOREIGN KEY (userid) REFERENCES users(id)`,
+  (err) => {
+    if(err) {
+      console.log('Error adding user completed levels', err);
+    } else {
+      console.log('Table user completed levels created');
+    }
+});
 
 connection.query(
  `CREATE TABLE IF NOT EXISTS "pointevents" (
