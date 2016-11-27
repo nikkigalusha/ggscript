@@ -65,28 +65,24 @@ class About extends React.Component {
       				<img className="img-responsive text-center" src="http://i.imgur.com/hQaEDFD.png"></img>
       			</div>
       			<h2 id="makeVideo" className="text-center"> React/Redux </h2>
-      			<p className="text-center">I enjoy drawing and making things that bring values or better experiences, and that's what makes coding so appealing to me. Also, currently a jiu-jitsu white belt in training.</p>
       		</div>
       		<div className="col-md-3">
       			<div className="profile-userpic">
       				<img className="img-responsive text-center" src="http://i.imgur.com/AR2hx4w.png"></img>
       			</div>
       			<h2 id="makeVideo" className="text-center"> Postgres </h2>
-      			<p className="text-center">I enjoy drawing and making things that bring values or better experiences, and that's what makes coding so appealing to me. Also, currently a jiu-jitsu white belt in training.</p>
       		</div>
       		<div className="col-md-3">
       			<div className="profile-userpic">
       				<img className="img-responsive text-center" src="http://i.imgur.com/ILucwC8.png"></img>
       			</div>
       			<h2 id="makeVideo" className="text-center"> Node/Express </h2>
-      			<p className="text-center">I enjoy drawing and making things that bring values or better experiences, and that's what makes coding so appealing to me. Also, currently a jiu-jitsu white belt in training.</p>
       		</div>
       		<div className="col-md-3">
       			<div className="profile-userpic">
       				<img className="img-responsive text-center" src="http://i.imgur.com/Kiw2aZg.png"></img>
       			</div>
       			<h2 id="makeVideo" className="text-center"> Phaser </h2>
-      			<p className="text-center">I enjoy drawing and making things that bring values or better experiences, and that's what makes coding so appealing to me. Also, currently a jiu-jitsu white belt in training.</p>
       		</div>
       	</div>
       	<div className="row">
@@ -95,21 +91,18 @@ class About extends React.Component {
       				<img className="img-responsive text-center" src="http://i.imgur.com/zSP9Pac.png"></img>
       			</div>
       			<h2 id="makeVideo" className="text-center"> Circle CI </h2>
-      			<p className="text-center">I enjoy drawing and making things that bring values or better experiences, and that's what makes coding so appealing to me. Also, currently a jiu-jitsu white belt in training.</p>
       		</div>
       		<div className="col-md-4">
       			<div className="profile-userpic">
       				<img className="img-responsive text-center" src="http://i.imgur.com/QS2Mv3Q.png"></img>
       			</div>
       			<h2 id="makeVideo" className="text-center">Jest / Jasmine / Enzyme</h2>
-      			<p className="text-center">I enjoy drawing and making things that bring values or better experiences, and that's what makes coding so appealing to me. Also, currently a jiu-jitsu white belt in training.</p>
       		</div>
       		<div className="col-md-4">
       			<div className="profile-userpic">
       				<img className="img-responsive text-center" src="http://i.imgur.com/TSyhQcu.png"></img>
       			</div>
       			<h2 id="makeVideo" className="text-center"> Webpack </h2>
-      			<p className="text-center">I enjoy drawing and making things that bring values or better experiences, and that's what makes coding so appealing to me. Also, currently a jiu-jitsu white belt in training.</p>
       		</div>
       	</div>
       	<br></br>
