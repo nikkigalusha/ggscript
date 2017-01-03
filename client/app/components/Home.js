@@ -70,13 +70,13 @@ class Home extends React.Component{
       <div className="aboutPhaser">
         <div className="row">
         <div className="aboutText col-md-10 offset-md-1 text-center">
-          Phaser is a powerful and intuitive library that allows you to make HTML games that look and function beautifully within your browser.  The best thing about it is that you can get started with little to no experience with coding and its syntax is extremely similar to popular languages such as Ruby and Javascript.  Therefore, those with a bit of web development experience can translate much of what they know into their first games.
+          Phaser is a powerful and intuitive library that allows you to make HTML games that look and function beautifully within your browser.  The best thing about it is that you can get started with little to no experience with coding and it's syntax is extremely similar to popular languages such as Ruby and Javascript.  Therefore, those with a bit of web development experience can translate much of what they know into their first games.
         </div>
         </div>
         <img className="center-block" src="http://i.imgur.com/24ZyjhH.png?1"></img>
         <div className="row">
         <div className="aboutText col-md-10 offset-md-1 text-center">
-          GGScript is the best way to get started because we create a customizable, comprehensize, and expansive platform to ensure anyone that is interested in creating games has the ability to do so.  By providing a tutorial that you can tailor to your specific needs and a sandbox that removes the need to set up a dev environment locally - we have removed many of the barriers that so often derail programmers from making significant progress in their development careers.
+          GGScript is the best way to get started because we create a customizable, comprehensive, and expansive platform to ensure anyone that is interested in creating games has the ability to do so.  By providing a tutorial that you can tailor to your specific needs and a sandbox that removes the need to set up a dev environment locally - we have removed many of the barriers that so often derail programmers from making significant progress in their development careers.
       </div>
       </div>
       </div>
